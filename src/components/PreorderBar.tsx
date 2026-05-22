@@ -7,7 +7,6 @@ export function PreorderBar() {
 
   return (
     <div
-      id="preorder"
       className="fixed inset-x-0 bottom-0 z-30 border-t border-cream-dark bg-white/95 px-4 py-3 shadow-[0_-8px_30px_rgba(92,74,66,0.08)] backdrop-blur-md sm:px-6"
     >
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4">

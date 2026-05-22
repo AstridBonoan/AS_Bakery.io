@@ -5,7 +5,13 @@ const navLinks = [
   { href: '#seasonal', label: 'Seasonal' },
   { href: '#specials', label: 'Specials' },
   { href: '#preorder', label: 'Pre-order' },
-]
+] as const
+
+function handleNavClick(e: React.MouseEvent<HTMLAnchorElement>, href: string) {
+  if (href !== '#preorder') return
+  e.preventDefault()
+  document.getElementById('preorder')?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+}
 
 export function Header() {
   const { itemCount, openModal } = usePreorder()
@@ -27,6 +33,7 @@ export function Header() {
             <a
               key={link.href}
               href={link.href}
+              onClick={(e) => handleNavClick(e, link.href)}
               className="text-sm text-cocoa-light transition hover:text-cocoa"
             >
               {link.label}
@@ -58,6 +65,7 @@ export function Header() {
           <a
             key={link.href}
             href={link.href}
+            onClick={(e) => handleNavClick(e, link.href)}
             className="shrink-0 rounded-full px-4 py-2 text-sm text-cocoa-light transition hover:bg-cream-dark hover:text-cocoa"
           >
             {link.label}

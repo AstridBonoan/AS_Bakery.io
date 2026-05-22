@@ -3,6 +3,7 @@ import { Hero } from './components/Hero'
 import { ProductGallery } from './components/ProductGallery'
 import { SeasonalSection } from './components/SeasonalSection'
 import { SpecialsSection } from './components/SpecialsSection'
+import { PreorderSection } from './components/PreorderSection'
 import { PreorderBar } from './components/PreorderBar'
 import { PreorderModal } from './components/PreorderModal'
 import { Footer } from './components/Footer'
@@ -17,6 +18,7 @@ export default function App() {
         <ProductGallery />
         <SeasonalSection />
         <SpecialsSection />
+        <PreorderSection />
       </main>
       <Footer />
       <PreorderBar />
