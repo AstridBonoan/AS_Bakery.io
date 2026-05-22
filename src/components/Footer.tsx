@@ -7,7 +7,7 @@ export function Footer() {
           Open Fri–Sun · 7am – 2pm · Pre-orders encouraged
         </p>
         <p className="mt-6 text-xs text-cocoa-light/80">
-          © {new Date().getFullYear()} A&amp;S Bakery. Images via Unsplash.
+          © {new Date().getFullYear()} A&amp;S Bakery.
         </p>
       </div>
     </footer>

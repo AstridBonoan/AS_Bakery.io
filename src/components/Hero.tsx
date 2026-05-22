@@ -1,10 +1,12 @@
+import { assetUrl } from '../utils/assetUrl'
+
 export function Hero() {
   return (
     <section className="relative overflow-hidden px-4 pb-8 pt-6 sm:px-6 sm:pb-12 sm:pt-10">
       <div className="mx-auto max-w-6xl">
         <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem] sm:aspect-[21/9]">
           <img
-            src="https://images.unsplash.com/photo-1486427944299-d1955d23a34d?w=1200&h=800&fit=crop&q=85"
+            src={assetUrl('images/hero.jpg')}
             alt="Fresh pastries on a marble counter"
             className="h-full w-full object-cover"
           />
